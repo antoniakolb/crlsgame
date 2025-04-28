@@ -21,10 +21,10 @@ supply_slope = st.sidebar.slider("Supply Slope (d)", 1, 10, 3)
 quantity = np.linspace(0, 50, 100)
 
 def demand(q):
-    return demand_intercept - demand_slope * q
+    return np.maximum(0, demand_intercept - demand_slope * q)
 
 def supply(q):
-    return supply_intercept + supply_slope * q
+    return np.maximum(0, supply_intercept + supply_slope * q)
 
 def marginal_revenue(q):
     return demand_intercept - 2 * demand_slope * q
