@@ -6,7 +6,7 @@ st.set_page_config(page_title="Market Power Simulator")
 st.title("Market Power Simulator: Monopoly vs Monopsony")
 
 st.markdown("""
-Welcome to the **Market Power Simulator**! Use the sliders to adjust market parameters and compare outcomes under:
+Welcome to the **Market Power Simulator**! Adjust market parameters and compare outcomes under:
 - **Perfect Competition**
 - **Monopoly** (single seller)
 - **Monopsony** (single buyer)
