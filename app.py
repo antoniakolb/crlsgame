@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Market Power Simulator")
-st.title("🧠 Market Power Simulator: Monopoly vs Monopsony")
+st.title("Market Power Simulator: Monopoly vs Monopsony")
 
 st.markdown("""
 Welcome to the **Market Power Simulator**! Use the sliders to adjust market parameters and compare outcomes under:
@@ -64,17 +64,17 @@ ax.grid(True)
 st.pyplot(fig)
 
 st.markdown("""
-### 🧮 Key Results
+### Key Results
 - **Competitive Market**: Q = {:.2f}, P = {:.2f}
 - **Monopoly Outcome**: Q = {:.2f}, P = {:.2f}
 - **Monopsony Outcome**: Q = {:.2f}, P = {:.2f}
 """.format(q_comp, p_comp, q_mono, p_mono, q_monop, p_monop))
 
 st.markdown("""
-Try tweaking the parameters to see how **market power** affects prices and efficiency!
+Try changing the parameters to see how **market power** affects prices and efficiency!
 
 - Monopoly: ↓ Q, ↑ P (bad for consumers)
 - Monopsony: ↓ Q, ↓ P (bad for suppliers/workers)
 
-🔍 Use this tool to explore **deadweight loss**, **surplus redistribution**, and real-world policy ideas!
+You can also explore **deadweight loss**, **surplus**, and connect it to real-world policy ideas!
 """)
